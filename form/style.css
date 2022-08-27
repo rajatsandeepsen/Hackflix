@@ -5,7 +5,7 @@
     --whi2: rgb(195, 195, 195);
     --red1: #E50914;
     --red2:  #B00710;
-    --X:0.85;
+    --X:0.70;
 
 
 }
@@ -37,6 +37,40 @@ body {
     height: 100vh;
     background-color: var(--black);
 
+}
+
+.darker {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.732);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+
+#popup {
+    background-color: #303030;
+    width:400px;
+    height: 200px;
+    position:fixed;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 200px);
+    z-index: 99;
+    color: var(--white);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#close-button {
+    width: 100px;
+}
+
+.larger {
+    font-size: 40px;
 }
 
 .right {
@@ -83,9 +117,12 @@ body {
     height: auto;
     
 }
+h3 {
+    margin: 0;
+}
 
-
-.header>h4 {
+h4 {
+    margin: 0;
     font-weight: normal;
     font-size: 15px;
     color: var(--white);
@@ -97,7 +134,7 @@ body {
     flex-direction: column;
 }
 
-.form>p {
+p {
     text-align: left;
     color: var(--whi2);
         font-size: 14px;
@@ -131,9 +168,10 @@ body {
 
 .form-field:focus {
     border-color: var(--white);
+    background: var(--blk2);
 }
 
-.form>button {
+button {
     padding: 12px 10px;
     border-radius: 2px;
     border: none;
@@ -142,6 +180,10 @@ body {
     color: var(--white);
     letter-spacing: 1px;
     font-family: "Rubik", sans-serif;
+    transition: 0.2s;
+}
+button:hover, .form-field:hover {
+    background: var(--blk2);
 }
 
 .animation {
