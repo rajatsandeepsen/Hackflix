@@ -1,3 +1,45 @@
+var getCookies = function(){
+  var pairs = document.cookie.split(";");
+  var cookies = {};
+  for (var i=0; i<pairs.length; i++){
+    var pair = pairs[i].split("=");
+    cookies[(pair[0]+'').trim()] = unescape(pair.slice(1).join('='));
+  }
+   return (cookies);
+}
+
+function checkCookie() {
+  var cookies = getCookies()
+  console.log(cookies.hackflix);
+  if (cookies.hackflix == "1") {
+
+        console.log(cookies.hackflix);
+        document.getElementById("right").style.display="flex";
+        Closer();//show after and hide form
+
+    
+  } else {
+    console.log(cookies.hackflix);
+        document.getElementById("right").style.display="flex";
+        document.getElementById("form").style.display="flex";
+        document.getElementById("after").style.display="none";
+
+        const x=20;//days of the cookies validity
+        const d = new Date();
+        d.setTime(d.getTime() + (x*24*60*60*1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = "hackflix=1;"+"expires="+expires+";path=/";
+     }
+}
+
+function retry() {
+    //console.log(cookies.hackflix);
+    document.cookie = "hackflix=0; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    //console.log(cookies.hackflix);
+    //console.log(hackflix.hackflix);
+    history.go(0);
+}
+
 function closeright() {
     document.getElementById("right").style.display="none";
     document.getElementById("leftopenbutton").style.display="block";
@@ -8,25 +50,11 @@ function Showright() {
     document.getElementById("leftopenbutton").style.display="none";
 }
 
-function starting() {
-    let x= document.cookie;
-    if (x!=0){
-        
-        document.getElementById("right").style.display="flex";
-        document.getElementById("form").style.display="flex";
-        document.getElementById("after").style.display="none";
-    }
-    else {
-       
-        document.getElementById("right").style.display="flex";
-         Closer();
-    }
-}
 
 function Opener(){
 
 
-    document.cookie =0;
+    
     document.getElementById("darker").style.display = "block";
     document.getElementById("popup").style.display = "flex" ;
 }
@@ -36,11 +64,6 @@ function Closer() {
     document.getElementById("darker").style.display = "none";
     document.getElementById("form").style.display="none";
      document.getElementById("after").style.display="flex";
-}
-
-function retry() {
-    document.cookie = undefined;
-    history.go(0);
 }
 
 //for timer
