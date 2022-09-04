@@ -1,0 +1,15 @@
+@font-face {
+  font-family: netflix;
+  src: url(../font/BebasNeue-Bold.ttf);
+}
+@font-face {
+  font-family: secondary;
+  src: url(../font/NetflixSans_W_Rg.woff2);
+}
+h1, p {
+  font-family: secondary;
+}
+
+h3, h2 {
+  font-family: netflix;
+}/*# sourceMappingURL=second.css.map */
