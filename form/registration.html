@@ -5,96 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Name & Logo -->
     <title>Hackflix</title>
     <link rel="icon" type="image/gif/png" href="../media/H.png">
 
-
+    <!-- The Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
     <link rel="stylesheet" href="../temp-work/second.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class="container1">
-        <div id="darker" class="darker"> </div>
 
-        <div id="popup" class="animation a1"> <!--POPUP-->
+    <!-- The Main Container -->
+    <div class="container1">
+        <!--POPUP-->
+        <div id="darker" class="darker"> </div>
+        <div id="popup" class="animation a1">
             <i class=" animation a2 larger bi-check2-all"></i>
             <h3 class="animation a3">Response was submitted</h3>
             <h4 class="animation a3">detailed confirmation will on your mail soon</h4>
             <button id="close-button" onclick="Closer()" class="animation a4">Close <i class="bi bi-x-lg"></i></button>
         </div>
 
-
-        <div class="left">
-            <a href="http://"><img class="hackflix-png animation a1" src="../media/hackflix.png" alt="MLH"></a>
-            
-            <!--TIMER-->
-            <h1 id="timer" class="animation a2"> </h2>
-                <br>
-            <button id="leftopenbutton" onclick="Showright()" class="leftbutton animation a2">Open form <i class="bi bi-chevron-right"></i></button><br>
-            <button id="leftopenbutton2" onclick="Closer()" class="leftbutton animation a2">Details <i class="bi bi-caret-right"></i></button>
-
+        <!-- The Main Page Side -->
+        <div class="bg-black text-white d-flex flex-column justify-content-between p-5">
+            <a href="#Link-to-main-site"><img src="../media/HACKFLIX.png" alt="HACKFLIX" class="animation a1 col-md-2 col-5"></a>
+            <h2 class="animation a2 display-4 text-white text-start m-0" id="timer">
+                <!-- TIMER -->
+            </h2>
+            <div class="container row gy-2 gx-2">
+                <button id="leftopenbutton" onclick="Showright()" class="btn btn-danger animation a3 col-md-4 col-9">Registration Form <i class="bi bi-file-earmark-fill"></i></button>
+                &nbsp; &nbsp;
+                <button id="leftopenbutton2" onclick="Closer()" class="btn btn-danger animation a3 col-md-4 col-9">Details <i class="bi bi-caret-right-fill"></i></button>
+            </div>
+            <i class="bi bi-chevron-down align-self-center"></i>
         </div>
-        <div class="right" id="right">
-            <button onclick="closeright()" id="smallbutton" class="animation a5"><i class="bi bi-x-lg"></i></button><br>
-            <div class="header">
-                <br>
-                <img class="animation a1 hackflix-png" src="../media/hackflix.png" alt="MLH">
-                <br>
-                
-            </div><br>
 
+        <!-- The Form Page-->
+        <div class="border-start right" id="right">
+            <!-- The Form -->
             <form class="form" id="form" onsubmit="Opener()">
+                <button onclick="closeright()" id="smallbutton" class="animation a5 col-2"><i class="bi bi-x-lg"></i></button><br>
+                <img class="animation a1 col-8 col-md-4" src="../media/hackflix.png" alt="HACKFLIX"><br>
                 <p class="animation a2">Complete the following contact field</p>
                 <input type="text" minlength="2" maxlength="20" class="form-field animation a3" placeholder="First Name" required>
                 <input type="text" minlength="2" maxlength="20" class="form-field animation a3" placeholder="Last Name" required>
-
                 <input type="email" maxlength="30" class="form-field animation a3" placeholder="Email Address" required>
                 <input type="tel" pattern="[0-9]{10}" class="form-field animation a3" placeholder="Phone Number" required>
-
                 <input type="number"pattern="[0-9]{2}" maxlength="3" minlength="2" min="18" max="99" class="form-field animation a3" placeholder="Age" required>
                 <input type="text" minlength="2" maxlength="30" class="form-field animation a3" placeholder="Education" required>
                 <input type="text" minlength="2" maxlength="30" class="form-field animation a3" placeholder="Place" required>
-
-                
                 <br><p class="animation a4"><a href="#">Terms & Conditions</a></p><br>
-            
                 <li>
                     <button type="submit" class="animation a5">Confirm<i class="bi bi-chevron-right"></i></button>
-                    <button id="blackbutton" type="reset" class="animation a5">Reset <i class="bi bi-x-lg"></i></button>
-                    
+                    <button id="blackbutton" type="reset" class="animation a5">Reset <i class="bi bi-x-lg"></i></button>                    
                 </li>
             </form>
 
-
-
-
-            <div class="after" id="after">
-                <h2 class="animation a2">After the submittion, Soon you will get an Invitation through Mail</h2>
-                <br><br><br>
-                <p class="animation a4">for notification and help, join our</p><br>
-                
-                    <div class="contacts">
-                        <li>
-                            <a href="http://"><i class="afterlogos animation a4 bi-whatsapp"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://"><i class="afterlogos animation a4 bi-discord"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://"><i class="afterlogos animation a4 bi-telephone"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://"><i class="afterlogos animation a4 bi-instagram"></i></a>
-                        </li>
+            <!-- after form validation -->
+            <div class="after p-0 row" id="after">
+                <button onclick="closeright()" id="smallbutton" class="animation a5 col-2"><i class="bi bi-x-lg"></i></button><br>
+                <img class="animation a1 col-8 col-md-4" src="../media/hackflix.png" alt="HACKFLIX">
+                <p class="animation a2 text-white display-5 m-0">After the submittion, Soon you will get an Invitation through Mail</p>
+                    <div class="row">
+                            <p class="animation a4 m-0 col-12">for notification and help, join our</p>
+                            <a href="http://" class="col-3"><i class="animation a4 bi-whatsapp text-danger fs-2"></i></a>
+                            <a href="http://" class="col-3"><i class="text-danger fs-2 animation a4 bi-discord"></i></a>
+                            <a href="http://" class="col-3"><i class="text-danger fs-2 animation a4 bi-telephone"></i></a>
+                            <a href="http://" class="col-3"><i class="text-danger fs-2 animation a4 bi-instagram"></i></a>
                     </div>
-                    <li>
-                        <button onclick="retry()" class="animation a5">Back to form <i class="bi bi-arrow-clockwise"></i></button>
-                    </li>
+                    <button onclick="retry()" class="animation a5">Back to form <i class="bi bi-arrow-clockwise"></i></button>
+                    <br>
+                    <br>
+                    
             </div>
 
 
@@ -104,39 +90,39 @@
 
     </div>
 <div class="second-page bg-black text-white d-flex flex-column justify-content-center p-5 min-vw-100 m-0">
-    <h2 class="display-4 mt-5">
+    <h2 class="display-4 m-0 mt-5">
         About us
     </h2><br>
-    <p class="lead col-md-8 col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dignissimos
+    <p class="lead col-md-8 col-12 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dignissimos
         exercitationem, inventore repellendus, enim minima quidem reprehenderit voluptatem commodi eveniet natus
         perspiciatis non ipsa deleniti qui optio nihil consequuntur sint deleniti qui optio nihil consequuntur sint?</p>
 
     <div class="d-flex gap-3 mb-5">
-        <button class="btn rounded btn-outline-danger">Lorem ipsum <i class="bi bi-x-lg"></i></button>
+        <button class="btn rounded btn-dark">Lorem ipsum <i class="bi bi-x-lg"></i></button>
         <button class="btn rounded btn-danger">Lorem ipsum <i class="bi bi-arrow-right"></i></button>
     </div>
 </div>
 <div class="third-page d-flex flex-column justify-content-center p-5 bg-white min-vw-100 m-0 align-start">
     <div>
-        <h2 class="text-black display-3">
+        <h2 class="text-black display-3 m-0">
             Our Sponsers
         </h2><br>
-        <p class="lead col-md-8 col-12 text-black">
+        <p class="lead col-md-8 col-12 text-black m-0">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste dicta eos necessitatibus odio ipsum iusto
             aliquid id. Omnis rerum architecto numquam in repellat rem, neque, consequuntur eum debitis sunt commodi.
         </p>
     </div>
     <div class="row g-md-5 gx-2 gy-4 m-lg-5">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
-        <img src="../media/stock2.jpeg" alt="" class="col-6 col-lg-4 rounded">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
+        <img src="../media/stock2.jpeg" alt="" class="col-5 col-lg-4 rounded border">
     </div>
 </div>
 
-
+<!-- The Brain -->
 <script src="brain.js"></script>   
 </body>
 </html>
