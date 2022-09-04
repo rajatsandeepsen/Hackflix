@@ -1,18 +1,4 @@
-function Opener() {
-  
-//google form connections
 
-
-    document.getElementById("darker").style.display = "block";
-    document.getElementById("popup").style.display = "flex" ;
-}
-
-function retry(){
-   document.getElementById("after").style.display="none";
-  document.getElementById("right").style.display="flex";
-  document.getElementById("form").style.display="flex";
-  document.getElementById("form").reset();
-}
 function closeright() {
     document.getElementById("right").style.display="none";
     document.getElementById("leftopenbutton").style.display="block";
@@ -21,6 +7,8 @@ function closeright() {
 
 function Showright() {
     document.getElementById("right").style.display="flex";
+    document.getElementById("after").style.display="flex";
+
     document.getElementById("leftopenbutton").style.display="none";
     document.getElementById("leftopenbutton2").style.display="none";
 }
@@ -28,10 +16,7 @@ function Showright() {
 function Closer() {
     document.getElementById("leftopenbutton").style.display="none";
     document.getElementById("leftopenbutton2").style.display="none";
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("darker").style.display = "none";
     document.getElementById("right").style.display="flex";
-    document.getElementById("form").style.display="none";
     document.getElementById("after").style.display="flex";
 }
 

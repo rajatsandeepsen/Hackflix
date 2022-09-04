@@ -22,14 +22,6 @@
     <!-- The Main Container -->
     <div class="container1">
         <!--POPUP-->
-        <div id="darker" class="darker"> </div>
-        <div id="popup" class="animation a1">
-            <i class=" animation a2 larger bi-check2-all"></i>
-            <h3 class="animation a3">Response was submitted</h3>
-            <h4 class="animation a3">detailed confirmation will on your mail soon</h4>
-            <button id="close-button" onclick="Closer()" class="animation a4">Close <i class="bi bi-x-lg"></i></button>
-        </div>
-
         <!-- The Main Page Side -->
         <div class="bg-black text-white d-flex flex-column justify-content-between p-5">
             <a href="#Link-to-main-site"><img src="../media/hackflix.png" alt="HACKFLIX" class="animation a1 col-md-2 col-5"></a>
@@ -38,9 +30,9 @@
             </h2>
             <div class="container row gy-2 gx-2">
                 <!-- onclick="Showright()" -->
-                <button onclick="window.location.href='https://hackflix.devfolio.co'" id="leftopenbutton" class="animation a3 col-md-4 col-9">Registration Form <i class="bi bi-file-earmark-fill"></i></button>
+                <button onclick="window.open('http://google.com','_blank')" id="leftopenbutton" class="animation a2 col-md-4 col-9">Registration Form <i class="bi bi-file-earmark-fill"></i></button>
                 &nbsp; &nbsp;
-                <button id="leftopenbutton2" onclick="Closer()" class="animation a3 col-md-4 col-9">Details <i class="bi bi-caret-right-fill"></i></button>
+                <button id="leftopenbutton2" onclick="Closer()" class="animation a2 col-md-4 col-9">Details <i class="bi bi-caret-right-fill"></i></button>
             </div>
             <i class="bi bi-chevron-down align-self-center"></i>
         </div>
@@ -67,18 +59,19 @@
             </form> -->
 
             <!-- after form validation -->
-            <div class="after p-0 row" id="after">
+            <div class="after p-0 row" id="after" style="display:flex ;">
                 <button onclick="closeright()" id="smallbutton" class="animation a5 col-2"><i class="bi bi-x-lg"></i></button><br>
                 <img class="animation a1 col-8 col-sm-6" src="../media/hackflix.png" alt="HACKFLIX">
+                <br>
                 <p class="animation a2 text-white lead m-0">After the submittion, Soon you will get an Invitation through Mail</p>
                     <div class="row">
                             <p class="animation a4 m-0 col-12">for notification and help, join our</p>
-                            <a href="https://discord.gg/ak4m89vjU9" class="col-3"><i class="animation a4 bi-discord text-danger fs-2"></i></a>
-                            <a href="https://www.facebook.com/hackflix22" class="col-3"><i class="text-danger fs-2 animation a4 bi-facebook"></i></a>
-                            <a href="https://twitter.com/hackflix_22" class="col-3"><i class="text-danger fs-2 animation a4 bi-twitter"></i></a>
-                            <a href="https://www.instagram.com/hackflix22" class="col-3"><i class="text-danger fs-2 animation a4 bi-instagram"></i></a>
+                            <a href="https://discord.gg/ak4m89vjU9" class="col-3"><i class="animation a4 bi-discord text-white fs-2"></i></a>
+                            <a href="https://www.facebook.com/hackflix22" class="col-3"><i class="text-white fs-2 animation a4 bi-facebook"></i></a>
+                            <a href="https://twitter.com/hackflix_22" class="col-3"><i class="text-white fs-2 animation a4 bi-twitter"></i></a>
+                            <a href="https://www.instagram.com/hackflix22" class="col-3"><i class="text-white fs-2 animation a4 bi-instagram"></i></a>
                     </div>
-                    <button onclick="retry()" class="animation a5">Back to form <i class="bi bi-arrow-clockwise"></i></button>
+                    <button onclick="closeright()" class="animation a5">Back to form <i class="bi bi-arrow-clockwise"></i></button>
                     <br>
                     <br>        
             </div>
