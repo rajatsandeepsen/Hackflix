@@ -1,0 +1,183 @@
+:root {
+  --black: black;
+  --blk2: #303030;
+  --white: white;
+  --whi2: rgb(195, 195, 195);
+  --red1: #E50914;
+  --red2: #B00710;
+  --X: 0.85;
+}
+
+@font-face {
+  font-family: netflix;
+  src: url(../font/BebasNeue-Bold.ttf);
+}
+@font-face {
+  font-family: secondary;
+  src: url(../font/NetflixSans_W_Rg.woff2);
+}
+h1, p {
+  font-family: secondary;
+}
+
+p {
+  color: var(--whi2);
+}
+
+h3, h2 {
+  font-family: netflix;
+}
+
+.unwanted {
+  margin: 0 !important;
+}
+
+button {
+  padding: 12px 10px;
+  border-radius: 2px;
+  border: none;
+  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+  margin-top: 0px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.2s;
+}
+
+button:hover,
+.form-field:hover {
+  background: var(--blk2);
+}
+
+#smallbutton {
+  width: 40px;
+  background: var(--blk2);
+}
+
+#smallbutton:hover {
+  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+}
+
+#blackbutton {
+  background: var(--blk2);
+}
+
+#blackbutton:hover {
+  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+}
+
+.animation {
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.a1 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.a2 {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.a3 {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.a4 {
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+
+.a5 {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+.a6 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 100vw;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 100vw;
+  }
+}
+.movement-left {
+  -webkit-animation-name: left;
+  animation-name: left;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.movement-right {
+  -webkit-animation-name: right;
+  animation-name: left;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+#id {
+  background-image: linear-gradient(to left top, rgb(48, 48, 48, var(--X)), rgb(37, 37, 37, var(--X)), rgb(27, 27, 27, var(--X)), rgb(17, 17, 17, var(--X)), rgb(0, 0, 0, var(--X))), url(../media/stock-hackathon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=second.css.map */

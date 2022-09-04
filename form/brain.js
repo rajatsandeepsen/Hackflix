@@ -1,25 +1,3 @@
-
-function closeright() {
-    document.getElementById("right").style.display="none";
-    document.getElementById("leftopenbutton").style.display="block";
-    document.getElementById("leftopenbutton2").style.display="block";
-}
-
-function Showright() {
-    document.getElementById("right").style.display="flex";
-    document.getElementById("after").style.display="flex";
-
-    document.getElementById("leftopenbutton").style.display="none";
-    document.getElementById("leftopenbutton2").style.display="none";
-}
-
-function Closer() {
-    document.getElementById("leftopenbutton").style.display="none";
-    document.getElementById("leftopenbutton2").style.display="none";
-    document.getElementById("right").style.display="flex";
-    document.getElementById("after").style.display="flex";
-}
-
 //for timer
 var countDownDate = new Date("Oct 20, 2022 12:00:00").getTime();
 var x = setInterval(function()
