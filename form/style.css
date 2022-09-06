@@ -32,6 +32,13 @@ h3, h2 {
   margin: 0 !important;
 }
 
+.first-page {
+  background-image: linear-gradient(to left top, rgb(48, 48, 48, var(--X)), rgb(37, 37, 37, var(--X)), rgb(27, 27, 27, var(--X)), rgb(17, 17, 17, var(--X)), rgb(0, 0, 0, var(--X))), url(../media/stock-hackathon.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 button {
   padding: 12px 10px;
   border-radius: 2px;
@@ -173,11 +180,4 @@ button:hover,
   animation-fill-mode: both;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-}
-
-#id {
-  background-image: linear-gradient(to left top, rgb(48, 48, 48, var(--X)), rgb(37, 37, 37, var(--X)), rgb(27, 27, 27, var(--X)), rgb(17, 17, 17, var(--X)), rgb(0, 0, 0, var(--X))), url(../media/stock-hackathon.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }/*# sourceMappingURL=style.css.map */
