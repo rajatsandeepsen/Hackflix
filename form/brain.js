@@ -20,3 +20,21 @@ var x = setInterval(function()
         }
 
 }, 1000);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 5;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.remove("invisible");
+      
+    }
+    else reveals[i].classList.add("invisible");
+  }
+}
+
+window.addEventListener("scroll",reveal);

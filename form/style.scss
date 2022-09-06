@@ -22,7 +22,9 @@ p,h4 {
 h1,h3,h2,h5 {
     font-family: netflix ;
 }
-
+.invisible {
+    display: none !important;
+}
 .unwanted {
     margin: 0 !important;
 }
