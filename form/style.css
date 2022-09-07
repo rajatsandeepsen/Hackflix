@@ -5,6 +5,7 @@
   --whi2: rgb(195, 195, 195);
   --red1: #E50914;
   --red2: #B00710;
+  --netflix-color:linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
   --X: 0.85;
 }
 
@@ -31,7 +32,7 @@ h6 {
 }
 
 .red {
-  color: red;
+  color: var(--netflix-color);
 }
 
 .invisible {
@@ -60,12 +61,11 @@ h6 {
   background-position: center;
 }
 
-.button,
-button {
+.button {
   padding: 12px 10px;
   border-radius: 2px;
   border: none;
-  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+  background: var(--netflix-color);
   margin-top: 0px;
   color: var(--white);
   letter-spacing: 1px;
@@ -74,7 +74,6 @@ button {
 }
 
 .button:hover,
-button:hover,
 .form-field:hover {
   background: var(--blk2);
 }
@@ -85,7 +84,7 @@ button:hover,
 }
 
 #smallbutton:hover {
-  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+  background: var(--netflix-color);
 }
 
 #blackbutton {
@@ -93,7 +92,7 @@ button:hover,
 }
 
 #blackbutton:hover {
-  background: linear-gradient(to right, var(--red1) 0%, var(--red2) 100%);
+  background: var(--netflix-color);
 }
 
 .animation {
@@ -203,4 +202,122 @@ button:hover,
   animation-fill-mode: both;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+
+.the-past {
+  /* The actual timeline (the vertical ruler) */
+  /* The actual timeline (the vertical ruler) */
+  /* Container around content */
+  /* The circles on the timeline */
+  /* Place the container to the left */
+  /* Place the container to the right */
+  /* Add arrows to the left container (pointing right) */
+  /* Add arrows to the right container (pointing left) */
+  /* Fix the circle for containers on the right side */
+  /* The actual content */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+}
+.the-past * {
+  box-sizing: border-box;
+}
+.the-past .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.the-past .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: var(--red1);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.the-past .conbox {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.the-past .conbox::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background: var(--red1);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.the-past .left {
+  left: 0;
+}
+.the-past .right {
+  left: 50%;
+}
+.the-past .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.the-past .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.the-past .right::after {
+  left: -12px;
+}
+.the-past .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+  .the-past {
+    /* Place the timelime to the left */
+    /* Full-width containers */
+    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure all circles are at the same spot */
+    /* Make all right containers behave like the left ones */
+  }
+  .the-past .timeline::after {
+    left: 31px;
+  }
+  .the-past .conbox {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .the-past .conbox::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .the-past .left::after,
+.the-past .right::after {
+    left: 19px;
+  }
+  .the-past .right {
+    left: 0%;
+  }
 }/*# sourceMappingURL=style.css.map */
