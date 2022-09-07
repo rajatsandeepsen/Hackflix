@@ -32,6 +32,17 @@ h1, h3, h2, h5 {
   margin: 0 !important;
 }
 
+.mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize {
+  font-size: 30px;
+}
+
 .first-page {
   background-image: linear-gradient(to left top, rgb(48, 48, 48, var(--X)), rgb(37, 37, 37, var(--X)), rgb(27, 27, 27, var(--X)), rgb(17, 17, 17, var(--X)), rgb(0, 0, 0, var(--X))), url(../media/stock-hackathon.jpg) !important;
   background-size: cover;
@@ -52,6 +63,7 @@ button {
   transition: 0.2s;
 }
 
+.button:hover,
 button:hover,
 .form-field:hover {
   background: var(--blk2);
