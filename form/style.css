@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --black: black;
   --blk2: #303030;
@@ -320,4 +321,15 @@ h6 {
   .the-past .right {
     left: 0%;
   }
+}
+
+.faq .accordion:after {
+  content: "+";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.faq .active:after {
+  content: "−";
 }/*# sourceMappingURL=style.css.map */

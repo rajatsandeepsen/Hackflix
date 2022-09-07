@@ -20,7 +20,7 @@ var x = setInterval(function()
         }
 
 }, 1000);
-
+// for the scroll Animation
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -38,3 +38,19 @@ function reveal() {
 }
 
 window.addEventListener("scroll",reveal);
+
+// for the FAQ
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
