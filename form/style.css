@@ -49,6 +49,9 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: none;
+  background: none;
+  text-decoration: none;
 }
 
 .prize {
@@ -108,28 +111,28 @@ h6 {
 }
 
 .a1 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .a2 {
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
 }
 
 .a3 {
-  -webkit-animation-delay: 2.2s;
-  animation-delay: 2.2s;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 
 .a4 {
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
 }
 
 .a5 {
-  -webkit-animation-delay: 2.4s;
-  animation-delay: 2.4s;
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
 }
 
 .a6 {
