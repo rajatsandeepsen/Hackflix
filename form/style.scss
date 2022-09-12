@@ -76,23 +76,6 @@ h6{
     background: var(--blk2);
 }
 
-#smallbutton {
-    width: 40px;
-    background: var(--blk2);
-}
-
-#smallbutton:hover {
-    background: var(--netflix-color);
-}
-
-#blackbutton {
-    background: var(--blk2);
-}
-
-#blackbutton:hover {
-    background: var(--netflix-color);
-}
-
 .animation {
     -webkit-animation-name: move;
     animation-name: move;
@@ -100,38 +83,38 @@ h6{
     animation-duration: 0.4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .a1 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.a2 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.a3 {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-.a2 {
+.a4 {
     -webkit-animation-delay: 1.3s;
     animation-delay: 1.3s;
 }
 
-.a3 {
+.a5 {
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
-.a4 {
-    -webkit-animation-delay: 1.9s;
-    animation-delay: 1.9s;
-}
-
-.a5 {
-    -webkit-animation-delay: 2.2s;
-    animation-delay: 2.2s;
-}
-
 .a6 {
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 @-webkit-keyframes move {
