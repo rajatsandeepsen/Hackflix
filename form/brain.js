@@ -1,5 +1,5 @@
 //for timer
-var countDownDate = new Date("Nov 11, 2022 09:00:00").getTime();
+var countDownDate = new Date("Nov 18, 2022 09:00:00").getTime();
 var x = setInterval(function()
 {
 
@@ -11,7 +11,7 @@ var x = setInterval(function()
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  document.getElementById("timer").innerHTML = "HACKFLIX 2022 will starts in " + days + " days " + hours + " hours "+ minutes + " mins " + seconds + " sec";
+  document.getElementById("timer").innerHTML = "HACKFLIX 2022 will starts in "+ "<br>" + days + " days " + hours + " hours "+ minutes + " mins " + seconds + " sec";
 
 
     if (distance < 0) {

@@ -79,42 +79,42 @@ h6{
 .animation {
     -webkit-animation-name: move;
     animation-name: move;
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 .a1 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.a2 {
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
-.a2 {
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+.a3 {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
 }
 
-.a3 {
+.a4 {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-.a4 {
+.a5 {
     -webkit-animation-delay: 1.3s;
     animation-delay: 1.3s;
 }
 
-.a5 {
+.a6 {
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
-}
-
-.a6 {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
 }
 
 @-webkit-keyframes move {
