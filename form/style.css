@@ -18,12 +18,13 @@
   font-family: secondary;
   src: url(../font/NetflixSans_W_Rg.woff2);
 }
-p, h4 {
+h4 {
   font-family: secondary;
 }
 
-h1, h3, h2 {
-  font-family: netflix;
+h1, h3, h2,
+.texter {
+  font-family: netflix !important;
 }
 
 h6, p {
