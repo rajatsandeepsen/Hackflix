@@ -26,10 +26,8 @@ h1, h3, h2 {
   font-family: netflix;
 }
 
-h6 {
+h6, p {
   font-family: Roboto, "Open Sans", "Helvetica Neue";
-  margin: auto;
-  padding: 0;
 }
 
 .red {
@@ -38,6 +36,7 @@ h6 {
 
 .invisible {
   display: none !important;
+  transition: 0.2s;
 }
 
 .unwanted {
@@ -104,8 +103,8 @@ h6 {
 }
 
 .a3 {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .a4 {
