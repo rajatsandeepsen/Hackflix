@@ -60,6 +60,30 @@ h6,p{
         background-position: center;
     
 }
+
+.form-field {
+    background-color: var(--black);
+    height: 46px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: var(--whi2);
+    padding: 0 16px;
+    color: var(--white);
+    outline: 0;
+    transition: 0.2s;
+    margin-top: 18px;
+}
+
+.form>p>a {
+    color: var(--whi2);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.form>p>a:hover {
+    text-decoration: underline 1px var(--white);
+}
+
 .button {
     padding: 12px 10px;
     border-radius: 2px;
@@ -72,7 +96,8 @@ h6,p{
     transition: 0.2s;
 }
 .button:hover,
-.form-field:hover {
+.form-field:hover,
+.form-field:focus {
     background: var(--blk2);
 }
 
