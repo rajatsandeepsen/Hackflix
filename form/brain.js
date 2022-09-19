@@ -54,3 +54,33 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function Opener() {
+
+        var firstname = $('#firstname').val() || 'no set';
+        var lastname = $('#lastname').val() || 'no set';
+        var email = $('#email').val() || 'no set';
+        var phone = $('#phone').val() || 'no set';
+        var age = $('#age').val() || 'no set';
+
+        // post
+        var data = {
+            'entry.1288720830': firstname,
+            'entry.895148635': lastname,
+            'entry.1026251436': email,
+            'entry.863726186': phone,
+            'entry.1551171303': age
+
+
+        };
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCv-Z-HzftAWR6WcKAsaD3dEaqJYOfcpn3YuyQgpDZ8gb6yw/formResponse',
+          data: data,
+          contentType: 'application/json',
+          dataType: 'jsonp',
+          complete: function() {
+            alert('Registration Success');
+          }
+        });
+    }
