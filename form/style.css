@@ -10,6 +10,10 @@
   --X: 0.85;
 }
 
+.bg-own-color {
+  background-image: linear-gradient(to left, var(--blk2) 0%, var(--black) 40%);
+}
+
 @font-face {
   font-family: netflix;
   src: url(../font/BebasNeue-Bold.ttf);
@@ -66,7 +70,7 @@ h6, p {
 }
 
 .form-field {
-  background-color: var(--black);
+  background-color: transparent;
   height: 46px;
   border: 1px solid;
   border-radius: 2px;
