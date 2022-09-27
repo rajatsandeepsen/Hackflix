@@ -19,24 +19,41 @@
 
 </head>
 
-<body class="bg-own-color">
+<body class="bg-black">
     <a id="mlh-trust-badge"
         style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
         href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white"
         target="_blank"><img
             src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
             alt="Major League Hacking 2023 Hackathon Season" style="width:100%" class="animation a4"></a>
+    
 
+    <div class="modal fade" id="formConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-1">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Confirmation for Registration</h5>
+                <button type="button" onclick="Opener()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>we will contact you on Email as soon as possible</p><br>
+                <button type="button" class="btn button text-white">Confirm <i class="bi bi-check-lg"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     <!-- the form page -->
     <div class="min-vh-100 d-flex flex-column align-items-center m-0 p-2 p-md-5">
         <div class="container-lg">
-            <a href="https://hackflix.iedc.sjcetpalai.ac.in/hackathon" type="button" class="bg-transparent border-0 text-white-50 fs-3 lead"><i class="bi bi-arrow-left-circle"></i></a>
+            <a href="https://hackflix.iedc.sjcetpalai.ac.in/hackathon" type="button" class="bg-transparent border-0 text-white-50 fs-3 lead"><i class="bi bi-arrow-left"></i></a>
         </div>
         <div class="container-md col-md-5 col-10 m-0">
 
             <!-- style="height:75vh;
             overflow-y:scroll;" -->
-            <form class="form m-0 d-flex flex-column row-cols-1 align-items-center" id="form" onsubmit="Opener()">
+            <form class="form m-0 d-flex flex-column row-cols-1 align-items-center" id="form" ">
                 <img class="col-7 col-md-5 animation a4" src="/media/hackflix.png" alt="HACKFLIX"><br>
 
                 <!-- completed  -->
@@ -48,35 +65,34 @@
 
                 <!-- not completed -->
                 <p class="text-white-50 text-start m-0 p-0 animation a5">Team Details</p>
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6" placeholder="Team Name"
+                <input id="q1" type="text" minlength="2" maxlength="20" class="form-field col animation a6" placeholder="Team Name"
                     required>
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
+                <input id="q2" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
                     placeholder="Name of Team Lead" required>
-                <input id="" type="email" maxlength="30" class="form-field col animation a6" placeholder="Email of Lead" required>
-                <input id="" type="tel" pattern="[0-9]{10}" class="form-field col animation a6" placeholder="Whatsapp number of Lead"
+                <input id="q3" type="email" maxlength="30" class="form-field col animation a6" placeholder="Email of Lead" required>
+                <input id="q4" type="tel" pattern="[0-9]{10}" class="form-field col animation a6" placeholder="Whatsapp number of Lead"
                     required>
                 <br><br>
                 <p class="text-white-50 text-start m-0 p-0 animation a5">Team Members Details</p>
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6" placeholder="Team Member 2"
+                <input id="q5" type="text" minlength="2" maxlength="20" class="form-field col animation a6" placeholder="Team Member 2"
                     required>
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
+                <input id="q6" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
                     placeholder="Team Member 3 (Optional)">
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
+                <input id="q7" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
                     placeholder="Team Member 4 (Optional)">
-                <input id="" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
+                <input id="q8" type="text" minlength="2" maxlength="20" class="form-field col animation a6"
                     placeholder="Team Member 5 (Optional)">
                 <br><br>
-                <p class="text-white-50 text-start m-0 p-0 animation a5">In what type of educational institution are you currently
-                    enrolled in?</p>
-                <input id="" type="text" minlength="2" maxlength="30" class="form-field col animation a6"
+                <p class="text-white-50 text-start m-0 p-0 animation a5">Educational Details</p>
+                <input id="q9" type="text" minlength="2" maxlength="30" class="form-field col animation a6"
                     placeholder="Institution Name" required>
-                <input id="" type="text" minlength="2" maxlength="30" class="form-field col animation a6"
+                <input id="q10" type="text" minlength="2" maxlength="30" class="form-field col animation a6"
                     placeholder="Field of study" required>
-                <input id="" type="text" minlength="2" maxlength="30" class="form-field col animation a6" placeholder="Hometown"
+                <input id="q11" type="text" minlength="2" maxlength="30" class="form-field col animation a6" placeholder="Hometown"
                     required>
                 <br><br>
                 <li class="d-flex gap-3 col">
-                    <button type="submit" class="button animation a5">Confirm <i class="bi bi-chevron-right"></i></button>
+                    <button type="submit" onsubmit="showModel()" class="button animation a5">Confirm <i class="bi bi-chevron-right"></i></button>
                     <button type="reset" class="button animation a5">Reset <i class="bi bi-x-lg"></i></button>
                 </li>
                 <p class="text-white-50 text-start m-0 p-0 animation a6"><a href="#">Terms & Conditions</a></p>

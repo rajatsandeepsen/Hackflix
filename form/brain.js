@@ -55,32 +55,43 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// function Opener() {
+function showModel(){
+  let myModal = new bootstrap.Modal(document.getElementById('formConfirm'), {});
+  myModal.show();
+}
 
-//         var firstname = $('#firstname').val() || 'no set';
-//         var lastname = $('#lastname').val() || 'no set';
-//         var email = $('#email').val() || 'no set';
-//         var phone = $('#phone').val() || 'no set';
-//         var age = $('#age').val() || 'no set';
+function Opener() {
 
-//         // post
-//         var data = {
-//             'entry.1288720830': firstname,
-//             'entry.895148635': lastname,
-//             'entry.1026251436': email,
-//             'entry.863726186': phone,
-//             'entry.1551171303': age
+        var q1 = $('#q1').val() || 'no set';
+        var q2 = $('#q2').val() || 'no set';
+        var q3 = $('#q3').val() || 'no set';
+        var q4 = $('#q4').val() || 'no set';
+        var q5 = $('#q5').val() || 'no set';
+        var q6 = $('#q6').val() || 'no set';
+        var q7 = $('#q7').val() || 'no set';
+        var q8 = $('#q8').val() || 'no set';
+        var q9 = $('#q9').val() || 'no set';
+        var q10 = $('#q10').val() || 'no set';
+        var q11 = $('#q11').val() || 'no set';
+
+        // post
+        var data = {
+            'entry.1288720830': firstname,
+            'entry.895148635': lastname,
+            'entry.1026251436': email,
+            'entry.863726186': phone,
+            'entry.1551171303': age
 
 
-//         };
-//         $.ajax({
-//           type: 'POST',
-//           url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCv-Z-HzftAWR6WcKAsaD3dEaqJYOfcpn3YuyQgpDZ8gb6yw/formResponse',
-//           data: data,
-//           contentType: 'application/json',
-//           dataType: 'jsonp',
-//           complete: function() {
-//             alert('Registration Success');
-//           }
-//         });
-//     }
+        };
+        $.ajax({
+          type: 'POST',
+          url: '',
+          data: data,
+          contentType: 'application/json',
+          dataType: 'jsonp',
+          complete: function() {
+            alert('Form submitted successfully');
+          }
+        });
+    }
