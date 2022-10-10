@@ -53,7 +53,7 @@
 
             <!-- style="height:75vh;
             overflow-y:scroll;" -->
-            <form class="form m-0 d-flex flex-column row-cols-1 align-items-center" id="form" ">
+            <form class="form faq m-0 d-flex flex-column row-cols-1 align-items-center" id="form" ">
                 <img class="col-7 col-md-5 animation a4" src="/media/hackflix.png" alt="HACKFLIX"><br>
 
                 <!-- completed  -->
@@ -90,10 +90,22 @@
                     placeholder="Field of study" required>
                 <input id="q11" type="text" minlength="2" maxlength="30" class="form-field col animation a6" placeholder="Hometown"
                     required>
+                <!-- collapse  -->
+                
+                <br><p>
+                    <button class="button button2 animation a5 accordion" type="button" data-bs-toggle="collapse" data-bs-target="#teammate3"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Member 3 (optional)&nbsp;
+                    </button>
+                </p>
+                <input id="teammate3" type="text" minlength="2" maxlength="20" class="form-field col collapse"
+                        placeholder="Team Member 3 (Optional)">
+                <input id="teammate3" type="text" minlength="2" maxlength="20" class="form-field col collapse"
+                        placeholder="Team Member 4 (Optional)">
                 <br><br>
                 <li class="d-flex gap-3 col">
                     <button type="submit" onsubmit="showModel()" class="button animation a5">Confirm <i class="bi bi-chevron-right"></i></button>
-                    <button type="reset" class="button animation a5">Reset <i class="bi bi-x-lg"></i></button>
+                    <button type="reset" class="button button2 animation a5">Reset <i class="bi bi-x-lg"></i></button>
                 </li>
                 <p class="text-white-50 text-start m-0 p-0 animation a6"><a href="#">Terms & Conditions</a></p>
             </form>

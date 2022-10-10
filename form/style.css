@@ -2,6 +2,7 @@
 :root {
   --black: black;
   --blk2: #303030;
+  --blk3: #1c1c1c;
   --white: white;
   --whi2: rgb(195, 195, 195);
   --red1: #E50914;
@@ -40,8 +41,7 @@ h6, p {
 }
 
 .invisible {
-  display: none !important;
-  transition: 0.2s;
+  display: block;
 }
 
 .unwanted {
@@ -102,13 +102,23 @@ h6, p {
   color: var(--white);
   letter-spacing: 1px;
   font-family: "DM Sans", sans-serif;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .button:hover,
+.button:visited,
 .form-field:hover,
 .form-field:focus {
+  background: var(--blk3);
+}
+
+.button2 {
   background: var(--blk2);
+}
+
+.button2:hover,
+.button2:active {
+  background: var(--blk3);
 }
 
 .animation {
